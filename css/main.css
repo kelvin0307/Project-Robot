@@ -1,0 +1,152 @@
+:root {
+    --headerColor: #14705A;
+    --secondaryColor1: #14705A;
+    --background: #CCEDE5;
+    --homeColor: #86F0D7;
+    --whiteColor: white;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--headerColor);
+}
+
+header .logo {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+header .logo .logoBox {
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+nav ul li a {
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--homeColor);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    width: 10vw;
+    height: 12vh;
+    background-color: var(--secondaryColor1);
+    transition: 0.5s;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.contentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.textContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    padding: 0 0 0 20px;
+    align-items: center;
+    background-color: blue;
+}
+
+.textContainer .textBox {
+    width: 90%;
+    height: 80%;
+    background-color: blueviolet;
+}
+
+.textContainer .textBox .textHeader {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+}
+
+.textContainer .textBox .textHeader p {
+    font-size: 60px;
+}
+
+.textContainer .textBox .textContent {
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
+}
+
+.fotoContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.fotoContainer .fotoBox {
+    width: 70%;
+    height: 80%;
+    background-color: aquamarine;
+
+}
