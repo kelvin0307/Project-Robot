@@ -25,11 +25,29 @@
     </header>
     <main>
         <div class="contentContainer">
-            <div id="content"></div>
+            <div id="mainContent"></div>
         </div>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
+<script src="jquery.instagramFeed.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#myForm").submit(function(e){
+            e.preventDefault()
 
+            var username = $("#username").val()
+
+            $.instagramFeed({
+                'username':username,
+                'container':"#instagram-feed-demo",
+                'display_profile': true,
+                'display_biography': true,
+                'display_igtv': true
+            })
+        })
+    })
+</script>
 </html>
