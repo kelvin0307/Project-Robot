@@ -64,7 +64,7 @@ $(document).ready(function(){
         var page = $(this).attr('href');
         $('#mainContent').load('content/' + page + '.html');
         if (page === 'behind') {
-            setTimeout(() => test(), 200);
+            setTimeout(() => test(), 50);
         }
         return false
     })
